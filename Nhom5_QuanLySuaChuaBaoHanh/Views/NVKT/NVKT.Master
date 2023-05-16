@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NVKT.Master.cs" Inherits="Nhom5_QuanLySuaChuaBaoHanh.Views.NVKT.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+     
+    </style>
+    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../CSS/Header-Footer.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar bg-body-tertiary" data-bs-theme="light">
+            <div class="container">
+
+                <img alt="" class="navbar-brand w-25" src="../../Images/logo-panasonic.png" />
+                <div class="nav-item dropdown">
+                       <a class="dropdown-toggle btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">KieuDiem(KTV)</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Thông tin người dùng</a></li>
+                            <li><a class="dropdown-item" href="#">Thông báo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="/Views/Login/Login.aspx">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="/Views/NVKT/DanhSachDonSuaChua.aspx" class="nav__link1  nav-link">Lịch trình sửa chữa</a>
+                        </li>
+                        <li>
+                            <a href="/Views/NVKT/DanhSachDonBaoHanh.aspx" class="nav__link1 nav-link">Lịch trình bảo hành</a>
+                        </li>
+                    </ul>
+                </nav>
+              
+                <div class="col-12 mb-3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="footer" style="font-size:62.5%">
+            <div class="container">
+                <div class="footer__row">
+                    <ul class="footer__column">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link1">Về Panasonic Việt Nam</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link1">Sơ đồ Website</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__column">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link1">Đăng ký bảo hành đại lý</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link1">Điều khoản sử dụng</a>
+                        </li>
+                        <li class="footer__item">
+                            <img src="../../Images/footer_confirm.png" alt="Alternate Text" />
+
+                        </li>
+                    </ul>
+                    <div class="footer__column">
+                        <div class="footer__list">
+                            <div class="footer__item-row">
+                                <div class="footer__icon">
+                                    <img src="../../Images/icon_phone.png" alt="" />
+                                </div>
+                                <a href="#!" class="footer__link1">1800 1593</a>
+                            </div>
+                            <div class="footer__item-row">
+                                <div class="footer__icon">
+                                    <img src="../../Images/icon_fb.png" alt="" />
+                                </div>
+                                <a href="#!" class="footer__link1">Thiết bị Panasonic</a>
+                            </div>
+                            <div class="footer__item-row footer__item-subcribe">
+                                <input autocomplete="off" class="footer__item-input" type="email" name="email" value="" placeholder="Enter your email..." />
+                                <asp:Button Text="Subscribe" runat="server" class="footer__item-btn" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+    <script src="../../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+</html>

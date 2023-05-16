@@ -1,0 +1,371 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{186C65C0-198B-4C6A-8E5C-B40442CBDCB0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nhom5_QuanLySuaChuaBaoHanh</RootNamespace>
+    <AssemblyName>Nhom5_QuanLySuaChuaBaoHanh</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Header-Footer.css" />
+    <Content Include="CSS\index1.css" />
+    <Content Include="CSS\index3.css" />
+    <Content Include="CSS\inerx2.css" />
+    <Content Include="CSS\UserStyle.css" />
+    <Content Include="Images\footer_confirm.png" />
+    <Content Include="Images\icon_fb.png" />
+    <Content Include="Images\icon_phone.png" />
+    <Content Include="Images\logo-panasonic.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\star.png" />
+    <Content Include="Views\Admin\CapNhatTaiKhoanNhanVien.aspx" />
+    <Content Include="Views\Admin\DanhSachTaiKhoan.aspx" />
+    <Content Include="Views\ChinhSachBaoHanh.aspx" />
+    <Content Include="Views\ChiTietDichVuSuaChua.aspx" />
+    <Content Include="Views\Login\Login.aspx" />
+    <Content Include="Views\Login\Signup.aspx" />
+    <Content Include="Views\Admin\ThemTaiKhoanNhanVien.aspx" />
+    <Content Include="Views\NVCSKH\ChiTietDonBaoHanh.aspx" />
+    <Content Include="Views\NVCSKH\ChiTietDonSuaChua.aspx" />
+    <Content Include="Views\NVCSKH\DanhSachDonBaoHanh.aspx" />
+    <Content Include="Views\NVCSKH\DanhSachDonSuaChua.aspx" />
+    <Content Include="Images\logo-panasonic.png" />
+    <Content Include="Views\NVKT\DanhSachDonBaoHanh.aspx" />
+    <Content Include="Views\NVKT\DanhSachDonSuaChua.aspx" />
+    <Content Include="Views\QL\CapNhatChinhSachBaoHanh.aspx" />
+    <Content Include="Views\QL\CapNhatDichVuSuaChua.aspx" />
+    <Content Include="Views\QL\CapNhatLoaiSuaChua.aspx" />
+    <Content Include="Views\TrangChu.aspx" />
+    <Content Include="Views\User\ChiTietBaoHanh.aspx" />
+    <Content Include="Views\User\ChiTietSuaChua.aspx" />
+    <Content Include="Views\User\DangKyBaoHanh.aspx" />
+    <Content Include="Views\User\DangKySuaChua.aspx" />
+    <Content Include="Views\User\DanhSachBaoHanh.aspx" />
+    <Content Include="Views\User\DanhSachSuaChua.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\CapNhatTaiKhoanNhanVien.aspx.cs">
+      <DependentUpon>CapNhatTaiKhoanNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CapNhatTaiKhoanNhanVien.aspx.designer.cs">
+      <DependentUpon>CapNhatTaiKhoanNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DanhSachTaiKhoan.aspx.cs">
+      <DependentUpon>DanhSachTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DanhSachTaiKhoan.aspx.designer.cs">
+      <DependentUpon>DanhSachTaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChinhSachBaoHanh.aspx.cs">
+      <DependentUpon>ChinhSachBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ChinhSachBaoHanh.aspx.designer.cs">
+      <DependentUpon>ChinhSachBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChiTietDichVuSuaChua.aspx.cs">
+      <DependentUpon>ChiTietDichVuSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ChiTietDichVuSuaChua.aspx.designer.cs">
+      <DependentUpon>ChiTietDichVuSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KVL\KVL.Master.cs">
+      <DependentUpon>KVL.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\KVL\KVL.Master.designer.cs">
+      <DependentUpon>KVL.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ThemTaiKhoanNhanVien.aspx.cs">
+      <DependentUpon>ThemTaiKhoanNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ThemTaiKhoanNhanVien.aspx.designer.cs">
+      <DependentUpon>ThemTaiKhoanNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVCSKH\ChiTietDonBaoHanh.aspx.cs">
+      <DependentUpon>ChiTietDonBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVCSKH\ChiTietDonBaoHanh.aspx.designer.cs">
+      <DependentUpon>ChiTietDonBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVCSKH\ChiTietDonSuaChua.aspx.cs">
+      <DependentUpon>ChiTietDonSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVCSKH\ChiTietDonSuaChua.aspx.designer.cs">
+      <DependentUpon>ChiTietDonSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVCSKH\DanhSachDonBaoHanh.aspx.cs">
+      <DependentUpon>DanhSachDonBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVCSKH\DanhSachDonBaoHanh.aspx.designer.cs">
+      <DependentUpon>DanhSachDonBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVCSKH\DanhSachDonSuaChua.aspx.cs">
+      <DependentUpon>DanhSachDonSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVCSKH\DanhSachDonSuaChua.aspx.designer.cs">
+      <DependentUpon>DanhSachDonSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\NVCSKH\NVCSKH.Master.cs">
+      <DependentUpon>NVCSKH.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVCSKH\NVCSKH.Master.designer.cs">
+      <DependentUpon>NVCSKH.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVKT\DanhSachDonBaoHanh.aspx.cs">
+      <DependentUpon>DanhSachDonBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVKT\DanhSachDonBaoHanh.aspx.designer.cs">
+      <DependentUpon>DanhSachDonBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVKT\DanhSachDonSuaChua.aspx.cs">
+      <DependentUpon>DanhSachDonSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVKT\DanhSachDonSuaChua.aspx.designer.cs">
+      <DependentUpon>DanhSachDonSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NVKT\NVKT.Master.cs">
+      <DependentUpon>NVKT.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NVKT\NVKT.Master.designer.cs">
+      <DependentUpon>NVKT.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QL\CapNhatChinhSachBaoHanh.aspx.cs">
+      <DependentUpon>CapNhatChinhSachBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\QL\CapNhatChinhSachBaoHanh.aspx.designer.cs">
+      <DependentUpon>CapNhatChinhSachBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QL\CapNhatDichVuSuaChua.aspx.cs">
+      <DependentUpon>CapNhatDichVuSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\QL\CapNhatDichVuSuaChua.aspx.designer.cs">
+      <DependentUpon>CapNhatDichVuSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QL\CapNhatLoaiSuaChua.aspx.cs">
+      <DependentUpon>CapNhatLoaiSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\QL\CapNhatLoaiSuaChua.aspx.designer.cs">
+      <DependentUpon>CapNhatLoaiSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QL\QL.Master.cs">
+      <DependentUpon>QL.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\QL\QL.Master.designer.cs">
+      <DependentUpon>QL.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\ChiTietBaoHanh.aspx.cs">
+      <DependentUpon>ChiTietBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\ChiTietBaoHanh.aspx.designer.cs">
+      <DependentUpon>ChiTietBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\ChiTietSuaChua.aspx.cs">
+      <DependentUpon>ChiTietSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\ChiTietSuaChua.aspx.designer.cs">
+      <DependentUpon>ChiTietSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\DangKyBaoHanh.aspx.cs">
+      <DependentUpon>DangKyBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\DangKyBaoHanh.aspx.designer.cs">
+      <DependentUpon>DangKyBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\DangKySuaChua.aspx.cs">
+      <DependentUpon>DangKySuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\DangKySuaChua.aspx.designer.cs">
+      <DependentUpon>DangKySuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\DanhSachBaoHanh.aspx.cs">
+      <DependentUpon>DanhSachBaoHanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\DanhSachBaoHanh.aspx.designer.cs">
+      <DependentUpon>DanhSachBaoHanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\DanhSachSuaChua.aspx.cs">
+      <DependentUpon>DanhSachSuaChua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\DanhSachSuaChua.aspx.designer.cs">
+      <DependentUpon>DanhSachSuaChua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\Users.Master.cs">
+      <DependentUpon>Users.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\Users.Master.designer.cs">
+      <DependentUpon>Users.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\NVCSKH\NVCSKH.Master" />
+    <Content Include="Views\Admin\Admin.Master" />
+    <Content Include="Views\NVKT\NVKT.Master" />
+    <Content Include="Views\User\Users.Master" />
+    <Content Include="Views\KVL\KVL.Master" />
+    <Content Include="Views\QL\QL.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59166</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59166/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

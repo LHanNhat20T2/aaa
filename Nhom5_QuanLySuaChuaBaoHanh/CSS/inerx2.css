@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #eeeeee;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    color: #062fd3;
+    font-size: 45px;
+    font-weight:bolder;
+    background-color: #eeeeee;
+  }
+  .content{
+    width: 90%;
+    display: flex;
+    height: auto;
+    border:1.5px solid gainsboro;
+    margin: 5px auto;
+    background-color: white;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 10px;
+  }
+  .content1{
+    margin-left: 200px;
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    height: 40px;
+    width: 800px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    height: 40px;
+    border-radius: 5px;
+    width: 32px;
+    border: none;
+    background-color: #0072c6;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .fa-search {
+    font-size: 14px;
+  }
+  .inffo .info1 .fa-solid{
+    font-size: 30px;
+  }
+  .inffo .info1{
+    display: flex;
+    justify-content: center;
+  }
+  .inffo h3{
+    color: rgb(7, 151, 223);
+  }
+
+
+  .table{
+    margin-top: 30px;
+}
+  .my-table {
+   
+    width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .my-table th,
+  .my-table td {
+    border: 1px solid rgb(106, 105, 105);
+    padding: 10px;
+    text-align: center;
+  }
+  .my-table tr:first-child {
+    background-color: rgb(54, 55, 96);
+    color: white;
+
+  }
+  .my-table th:first-child {
+    width: 25%;
+  }
+    
+  .pagination button {
+    margin-left: 20px;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0 0 2px;
+    width: 50px;
+    cursor: pointer;
+
+  }
+  
+  .pagination button:hover {
+    background-color: #bbb;
+  }
+  
+
+
+  .title{
+    display: flex;
+  }
+  .title a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #aaaaaa;
+    padding-left: 40px;
+    margin: 20px 0;
+  }
+  .title2{
+    padding-left: 50px;
+    font-size: 12px;
+    color: #04406b;
+  }
+
+  .img-content{
+    width: 350px;
+    height: 350px;
+    border: 1px solid gainsboro;
+  }
+  .title-content{
+    display: flex;
+    margin:20px 0;
+  }
+  .tc{
+    border: 1px solid  black;
+    margin-left: 100px;
+    padding: 5px 20px;
+  }
+
+
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    margin: 0 20px;
+    font-size: 16px;
+    width: 120px;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+  }
+  
+  .add-button {
+    background-color: #28a745;
+  }
+  
+  .update-button {
+    background-color: #17a2b8;
+  }
+  
+  .delete-button {
+    background-color: #ffc107;
+  }
+
+  footer{
+    padding: 50px 100px;
+    background-color: #132959;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(207, 206, 206);
+    font-weight: 100;
+  }

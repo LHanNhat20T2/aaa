@@ -1,0 +1,53 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/NVCSKH/NVCSKH.Master" AutoEventWireup="true" CodeBehind="DanhSachDonSuaChua.aspx.cs" Inherits="Nhom5_QuanLySuaChuaBaoHanh.DanhSachDonSuaChua" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h3>Danh sách đơn sửa chữa</h3>
+    <div class="row">
+        <div class="col-md-3 mt-3 mb-3">
+            <label for="lbLoaiSanPham" class="form-label">Dịch vụ sửa chữa</label>
+            <asp:DropDownList ID="ddlLSP" runat="server" CssClass="form-select">
+                <asp:ListItem Text="Tất cả" Selected="True"></asp:ListItem>
+                <asp:ListItem Text="Sửa chữa tủ lạnh"></asp:ListItem>
+                <asp:ListItem Text="Sửa chữa điều hòa"></asp:ListItem>
+                <asp:ListItem Text="..."></asp:ListItem>
+                <asp:ListItem Text="..."></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="col-md-3 mt-3 mb-3">
+            <label for="lbTTD" class="form-label">Trạng thái đơn</label>
+            <asp:DropDownList ID="ddlTTD" runat="server" CssClass="form-select">
+                <asp:ListItem Text="Tất cả" Selected="True"></asp:ListItem>
+                <asp:ListItem Text="Chờ duyệt"></asp:ListItem>
+                <asp:ListItem Text="Đã duyệt"></asp:ListItem>
+                <asp:ListItem Text="Từ chối"></asp:ListItem>
+                <asp:ListItem Text="Hoàn thành"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="col-md-3 ms-auto mt-3 mb-3">
+            <label for="lbTimKiem" class="form-label">Tìm kiếm</label>
+            <div class="input-group">
+                <asp:TextBox ID="txtTimKiemDBH" CssClass="form-control" runat="server" placeholder="Nhập maDon" Enabled="true"></asp:TextBox>
+                <asp:Button ID="btnTimKiemDBH" runat="server" Text="Tìm" CssClass="input-group-text btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+    <asp:GridView ID="gvDSDonSuaChua" CssClass="table" runat="server" AutoGenerateColumns="false" AllowPaging="True" OnPageIndexChanging="gvDSDonSuaChua_PageIndexChanging" PageSize="5" OnRowCommand="gvDSDonSuaChua_RowCommand">
+    <Columns>
+        <asp:BoundField DataField="Mã đơn sửa chữa" HeaderText="Mã đơn SC" />
+        <asp:BoundField DataField="Dịch vụ sửa chữa" HeaderText="DV sửa chữa" />
+        <asp:BoundField DataField="Loại sửa chữa" HeaderText="Loại sửa chữa" />
+        <asp:BoundField DataField="Ngày đến" HeaderText="Ngày đến" DataFormatString="{0:dd/MM/yyyy}" />
+        <asp:BoundField DataField="Giờ hẹn" HeaderText="Giờ hẹn" />
+        <asp:BoundField DataField="Trạng thái đơn" HeaderText="Trạng thái đơn" />
+
+        <asp:TemplateField>
+            <ItemTemplate>
+                <asp:Button ID="btnXemChiTiet" runat="server" CssClass="btn btn-primary" Text="Duyệt đơn" CommandName="ViewDetail" CommandArgument='<%# Eval("Mã đơn sửa chữa") %>'/>
+            </ItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+    </asp:GridView>
+
+</asp:Content>
